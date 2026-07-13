@@ -1,0 +1,78 @@
+.container {
+  font-family: "Poppins";
+  padding: 1.2rem;
+  background: linear-gradient(90deg, #0f172a 0%, #2563eb 50%, #60a5fa 100%);
+  min-height: 100vh;
+  color: white;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-inline: 2rem;
+  height: 80vh;
+}
+
+.mainContainer_right img {
+  width: 600px;
+  box-shadow: 0 20px 40px rgba(2, 6, 23, 0.35);
+}
+
+.mainContainer_right {
+  flex: 0.5;
+}
+
+.mainContainer_left {
+  flex: 0.5;
+}
+.mainContainer_left > p:nth-child(1) {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.mainContainer_left > p:nth-child(2) {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.7rem;
+}
+
+.buttonJoin {
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background 160ms ease,
+    transform 120ms ease;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.buttonJoin:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1.3rem;
+  }
+  .mainContainer_left {
+    flex: 1;
+    padding-top: 1.5rem;
+  }
+  .mainContainer_right {
+    flex: 1;
+  }
+
+  .mainContainer_right img {
+    width: 100%;
+  }
+}

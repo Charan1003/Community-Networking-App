@@ -1,0 +1,47 @@
+.container {
+  padding: 1.2rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #0f172a 0%, #2563eb 50%, #60a5fa 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.18);
+}
+
+.navbarOptionContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttonJoin {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    background 160ms ease,
+    transform 120ms ease;
+}
+
+.navbarOptionContainer p {
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navbarOptionContainer p:hover,
+.buttonJoin:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}

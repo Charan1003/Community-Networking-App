@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 86svh;
+  align-items: center;
+  background: rgb(247, 249, 255);
+}
+
+.cardContainer {
+  height: 80vh;
+  display: flex;
+  border-radius: 10px;
+  width: 80vw;
+  overflow: hidden;
+  background: white;
+  box-shadow: 10px 10px 15px rgb(178, 178, 178);
+}
+
+.cardContainer_left {
+  flex: 0.6;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cardContainer_right {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(18, 60, 17, 0.536);
+  color: white;
+}
+
+.cardLeft_heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.inputField {
+  padding-inline: 1.4rem;
+  padding-block: 0.8rem;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid silver;
+  width: 100%;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.3rem;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.inputRow {
+  display: flex;
+  gap: 1.2rem;
+}
+.button {
+  padding: 0.8rem 1.3rem;
+  background-color: rgba(69, 62, 37, 0.72);
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+}
